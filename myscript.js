@@ -6,6 +6,4 @@
  
 document.getElementById("myalart").addEventListener("click", hisfunction);
 
-function hisfunction(){
-    alert("new new zha le");
-}
+

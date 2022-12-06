@@ -5,10 +5,53 @@
     <link rel="icon" type="image/x-icon" href="head.ico">
     <link rel="stylesheet" href="styles.css">
     <script src="myscript.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <meta charset="utf-8">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: #111;
+        }
+        </style>
 </head>
     <body>
+        <ul>
+            <li><a class="active" href="#home">主页</a></li>
+            <li><a href="#news">抽象简史</a></li>
+            <li><a href="#contact">抽象人物</a></li>
+            <li><a href="#about">抽象事迹</a></li>
+          </ul>
+          <form action="/demo/demo_form.asp" style="color:white">
+            account:<br>
+            <input type="text" name="firstname" value="account">
+            <br>
+            password:<br>
+            <input type="text" name="lastname" value="password">
+            <br><br>
+            <input type="submit" value="Submit">
+            </form> 
         <h1 style="color:white ; border:1px solid white; width: 200px; ">抽象艺术<span style="background-color:rgb(225,165,0);color: black;padding: 1px;">殿堂</span></h1>
-        <h2>我们不是小丑的生产者 <del>INTERNET CLOWN</del> 我们只是joker的搬运工</h2>
+        <h2>我们不是小丑的生产者 <del>INTERNET CLOWN</del> 我们只是joker的搬运工Internet artist introduction site</h2>
+        <h3 style="color:white ;">Disclaimer: The following characters are all abstract artists that exist in reality. Art forms include but are not limited to: short videos, body art, performance art, etc.</h3>
         <p>关注网络世界抽象灵魂人物</p>
         <p>一个收集网络烂梗给引流狗指路的合集网<br>A collection network that collects rotten Internet memes to guide dogs<del>浪费时间毫无营养梗小鬼聚集之地</del></p>
         <a  href="https://jikipedia.com/" target="_blank"><input type="button" value="give up your mind"></a>
@@ -70,5 +113,32 @@
           alert ("不要气馁，这都是成为顶级JOKERKING的关键步骤。继续点下去");
         }
         </script>
+        <div class="w">
+         <div class="controls">
+            <textarea
+            placeholder="请写下你的小丑经历Please write down your evaluation of the above artists"
+            id="area"
+            cols="30"
+            rows="10"
+            maxlength="200"
+            ></textarea>
+            <div>
+                <span class="useCount">0</span>
+                <span>/</span>
+                <span>200</span>
+                <button id="send">release</button>
+            </div>
+         </div>
+         <div class="contentList">
+            <ul></ul>
+         </div>
+        </div>
+        <script src="myscript2.js"></script>
+        <p>看看你自己的数据呢？See which day you are the most artistic!</p>
+        <script src="myscript3.js"></script>
+        <p>OMG Are you a joker too?<img src="xqc.gif" style=" width: 150px;px; height: 100px;""></p>
+        <p>The name of the bar chart below, the name of the x-axis and the number of works on the y-axis are hidden, please use the mouse to invert the color to view.</p>
+        <svg width="1600" height="800" id="mainsvg" class="svgs"></svg>
+    <script src="const data = [.js"></script>
     </body>
 </HTML>
